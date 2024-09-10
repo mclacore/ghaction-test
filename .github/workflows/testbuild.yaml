@@ -17,3 +17,11 @@ jobs:
         run: ls -la /home/runner/work/ghaction-test/ghaction-test
       - name: list in src
         run: ls -la /home/runner/work/ghaction-test/ghaction-test/src
+      - name: Publish bundle
+        uses: massdriver-cloud/actions/bundle_publish@v4
+      - name: pwd 2
+        run: pwd
+      - name: List files 2
+        run: ls -la /home/runner/work/ghaction-test/ghaction-test
+      - name: list in src 2
+        run: ls -la /home/runner/work/ghaction-test/ghaction-test/src
