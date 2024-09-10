@@ -11,3 +11,7 @@ jobs:
         uses: massdriver-cloud/actions@v4
       - name: Build Bundle
         uses: mclacore/md-actions@main
+      - name: List files
+        run: ls -la
+      - name: list in src
+        run: ls -la src
