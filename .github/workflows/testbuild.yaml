@@ -10,7 +10,7 @@ jobs:
       - name: Install Massdriver CLI
         uses: massdriver-cloud/actions@v4
       - name: Build Bundle
-        uses: mclacore/md-actions/bundle-build@main
+        uses: mclacore/md-actions/bundle_build@main
       - name: List files
         run: ls -la /home/runner/work/ghaction-test/ghaction-test
       - name: list in src
