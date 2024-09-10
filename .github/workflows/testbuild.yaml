@@ -10,4 +10,4 @@ jobs:
       - name: Install Massdriver CLI
         uses: massdriver-cloud/actions@v4
       - name: Build Bundle
-        uses: ../../../bundle_build/
+        uses: mclacore/md-actions@main
