@@ -1,0 +1,13 @@
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      MASSDRIVER_API_KEY: ${{ secrets.MASSDRIVER_API_KEY }}
+      MASSDRIVER_ORG_ID: ${{ secrets.MASSDRIVER_ORG_ID }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Massdriver CLI
+        uses: massdriver-cloud/actions@v4
+      - name: Build Bundle
+        uses: ../../../bundle_build/
