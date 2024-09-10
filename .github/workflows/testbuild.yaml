@@ -14,6 +14,6 @@ jobs:
       - name: pwd
         run: pwd
       - name: List files
-        run: ls -la
+        run: ls -la /home/runner/work/ghaction-test/ghaction-test
       - name: list in src
-        run: ls -la src
+        run: ls -la /home/runner/work/ghaction-test/ghaction-test/src
